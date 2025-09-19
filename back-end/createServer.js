@@ -7,6 +7,10 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const PORT = process.env.PORT_URL;
 
+app.get("/", (req, res) => {
+  res.send("HLLOW BILAL HOW ARE YOU!");
+});
+
 app.use(bodyParser.json());
 app.use(cors());
 app.use("/kanban", router);
