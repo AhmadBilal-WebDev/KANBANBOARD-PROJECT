@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/kanban/(.*)",
+      "destination": "https://my-backend.vercel.app/kanban/$1"
+    }
+  ]
+}
