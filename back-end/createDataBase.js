@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const MONGO_URL = process.env.MONGO_URL;
+const MONGO_URL =
+  "mongodb+srv://kanban-board:kanbanboard@kanban-board.tfvfw4w.mongodb.net/Kanban-Board?retryWrites=true&w=majority&appName=KANBAN-BOARD";
 mongoose.connect(MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
