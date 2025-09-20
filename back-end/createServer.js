@@ -5,7 +5,7 @@ const db = require("./createDataBase");
 const router = require("./createRouter");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const PORT = process.env.PORT_URL;
+const PORT = process.env.PORT_URL || 5000;
 
 app.get("/", (req, res) => {
   res.send("HLLOW BILAL HOW ARE YOU!");
