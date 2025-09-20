@@ -8,7 +8,7 @@ const cors = require("cors");
 const PORT = process.env.PORT_URL || 5000;
 
 app.get("/", (req, res) => {
-  res.send("HLLOW BILAL HOW ARE YOU!");
+  res.send("HLLOW BILAL HOW ARE YOU! MA THEEK HU!");
 });
 
 app.use(bodyParser.json());
