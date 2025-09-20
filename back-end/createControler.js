@@ -28,20 +28,20 @@ const getAllTask = async (req, res) => {
   }
 };
 
-const updateTask = async (req, res) => {
-  try {
-    const id = req.params.id;
-    const body = req.body;
-    const data = await taskModel.findByIdAndUpdate(id, body);
-    console.log("Task Updated From DB ✅");
-    res.status(200).json({ message: "task updated", success: true, data });
-  } catch (error) {
-    console.log("Something Error In Update Task ❌");
-    res
-      .status(500)
-      .json({ message: "Something Error In Update Task ❌", success: false });
-  }
-};
+// const updateTask = async (req, res) => {
+//   try {
+//     const id = req.params.id;
+//     const body = req.body;
+//     const data = await taskModel.findByIdAndUpdate(id, body);
+//     console.log("Task Updated From DB ✅");
+//     res.status(200).json({ message: "task updated", success: true, data });
+//   } catch (error) {
+//     console.log("Something Error In Update Task ❌");
+//     res
+//       .status(500)
+//       .json({ message: "Something Error In Update Task ❌", success: false });
+//   }
+// };
 
 const deleteTask = async (req, res) => {
   try {
